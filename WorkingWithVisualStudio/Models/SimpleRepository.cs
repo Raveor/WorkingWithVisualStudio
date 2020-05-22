@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace WorkingWithVisualStudio.Models
 {
@@ -25,7 +22,8 @@ namespace WorkingWithVisualStudio.Models
             foreach (var p in initialItems)
             {
                 AddProduct(p);
-            }    
+            }
+            products.Add("Błąd", null);
         }
 
         public IEnumerable<Product> Products => products.Values;
